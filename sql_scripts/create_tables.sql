@@ -1,8 +1,10 @@
 CREATE TABLE sales (
-    store_id INT,
-    store_name TEXT,
-    date DATE,
-    department TEXT,
-    revenue NUMERIC,
-    transactions INT
+    store INTEGER NOT NULL,
+    date DATE NOT NULL,
+    weekly_Sales NUMERIC(12,2),
+    holiday_flag BOOLEAN,
+    temperature NUMERIC(5,2),
+    fuel_price NUMERIC(5,2),
+    cpi NUMERIC(7,3),
+    unemployment NUMERIC(5,3)
 );
