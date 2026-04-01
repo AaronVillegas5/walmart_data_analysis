@@ -63,7 +63,6 @@ def load_sql_with_fallback(query, sqlite_path='../data/walmart.db'):
             f"{os.getenv('DB_NAME')}"
         )
         df = load_postgres(query, engine_url)
-        print("Loaded from PostgreSQL")
         return df
     except Exception as e:
         print("PostgreSQL failed, falling back to SQLite:", e)
