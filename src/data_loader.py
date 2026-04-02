@@ -22,6 +22,8 @@ def load_postgres(query, engine_url):
     return df
 def save_to_sqlite(df, db_path='../data/walmart.db', table_name='sales'):
     import sqlite3
+    df=df.copy()  # Avoid modifying the original DataFrame
+    df.drop_duplicates(inplace=True)  # Remove duplicates to prevent integrity errors
     with sqlite3.connect(db_path) as conn:
         df.to_sql(table_name, conn, index=False, if_exists='replace')
 
