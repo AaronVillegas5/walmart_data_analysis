@@ -43,6 +43,6 @@ This project analyzes two years of weekly sales data across 45 Walmart stores to
 
 ## 🖥 Tableau Dashboard
 
-![Walmart Sales Dashboard](WalmartSalesAnalysisDashboard.png)
+![Walmart Sales Dashboard](WalmartDashboard.png)
 
 [Click here to view the interactive Tableau Dashboard](#)
